@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<title>学生信息</title>
+<style>
+    fieldset {
+        width: 600px;
+        height: 700px;
+        border: red solid 1.5px;
+    }
+    
+    legend {
+        font-size: 25px;
+        color: red;
+    }
+    
+    form {
+        width: 600px;
+        height: 650px;
+    }
+    
+    input {
+        width: 500px;
+        height: 30px;
+        float: left;
+        margin-left: 30px;
+    }
+    
+    p {
+        width: 500px;
+        height: 30px;
+        float: left;
+        margin-bottom: 0;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    
+    #marks {
+        width: 20px;
+        height: 30px;
+        float: left;
+        color: red;
+        margin-left: 0;
+    }
+    
+    #sub {
+        margin-top: 40px;
+    }
+</style>
+<header>
+    <h1>学生信息</h1>
+</header>
+<article>
+    <fieldset>
+        <legend>学生档案</legend>
+        <form>
+            <p>姓名:</p>
+            <input type="text" name="name" placeholder="请输入姓名" required/>
+            <p id="marks">*</p>
+            <p>学号:</p>
+            <input type="number" name="no" min="" max="9999999999" step="1" required/>
+            <p id="marks">*</p>
+            <p>手机号码:</p>
+            <input type="tel" placeholder="输入手机号" name="phone" required/>
+            <p id="marks">*</p>
+            <p>邮箱地址:</p>
+            <input type="email" name="email" placeholder="请输入邮箱地址" required/>
+            <p id="marks">*</p>
+            <p>录取学校:</p>
+            <input type="search" name="school" autocomplete="on" list="names" />
+            <datalist id="names">
+	                <option>石家庄一中</option>
+	                <option>石家庄二中</option>
+	                <option>邯郸市一中</option>
+	                <option>邯郸市二中</option>
+            </datalist>
+            <p>入学成绩:</p>
+            <input type="number" name="score" min="0" max="750" step="1" />
+            <p>入学时间:</p>
+            <input type="date" name="date" value="年/月/日" />
+
+            <input id="sub" type="submit" value="提交">
+
+        </form>
+    </fieldset>
+</article>
