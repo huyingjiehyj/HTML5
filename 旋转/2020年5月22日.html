@@ -1,0 +1,98 @@
+<!DOCTYPE html >
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        body {
+            background-image: url(img/bg3.JPG);
+        }
+        
+        ul>li {
+            display: inline;
+        }
+        
+        ul>li>a {
+            background-color: aqua;
+            display: inline;
+            float: left;
+            margin: 10px 10px 27px 30px;
+            padding: 10px 10px 15px;
+            text-align: center;
+            border: solid 0.5px rgba(0, 0, 0, 0.25);
+            transform: rotate(-15deg);
+            transition: transform .15s linear;
+        }
+        
+        ul>li>a>img {
+            display: block;
+            height: 100px;
+            margin-bottom: 12px;
+        }
+        
+        ul>li>a {
+            content: attr(title);
+        }
+        
+        li:nth-child(even) a {
+            transform: rotate(5deg);
+        }
+        
+        li:nth-child(2n) a {
+            position: relative;
+            top: -5px;
+            transform: none;
+        }
+        
+        li:nth-child(3n) a {
+            position: relative;
+            right: 5px;
+            transform: rotate(-10deg);
+        }
+        
+        li:nth-child(4n) a {
+            position: relative;
+            right: 5px;
+            top: 8px;
+        }
+        
+        li:nth-child(5n) a {
+            position: relative;
+            left: -5px;
+            top: 3px;
+        }
+        
+        li a:hover {
+            transform: scale(1.25);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+            position: relative;
+            z-index: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="polaroids">
+        <li>
+            <a href="1"> <img src="img/11.jpg" alt="相识" /> </a>
+        </li>
+        <li>
+            <a href="2"> <img src="img/22.jpg" alt="凝视" /> </a>
+        </li>
+        <li>
+            <a href="3"> <img src="img/33.jpg" alt="甜睡" /> </a>
+        </li>
+        <li>
+            <a href="4"> <img src="img/44.jpg" alt="逗乐" /> </a>
+        </li>
+        <li>
+            <a href="5"> <img src="img/55.jpg" alt="奔跑" /> </a>
+        </li>
+        <li>
+            <a href="6"> <img src="img/66.jpg" alt="漠视" /> </a>
+        </li>
+    </ul>
+</body>
+
+</html>
