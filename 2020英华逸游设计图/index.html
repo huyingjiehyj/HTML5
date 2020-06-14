@@ -11,8 +11,8 @@
     <script src="js/bootstrap.min.js"></script>
     <title></title>
     <style>
-       @media screen and (min-width: 600px) {
-            body2 {
+        @media screen and (min-width: 500px) {
+            .car_model_phone {
                 display: none;
             }
             a {
@@ -431,9 +431,70 @@
                 line-height: 100px;
             }
         }
- @media screen and (max-width: 500px) {
         
- }
+        @media screen and (max-width: 500px) {
+            .car_model_phone {
+                display: block;
+            }
+            .navbar {
+                min-height: 60px;
+            }
+            .Btitle_phone {
+                display: block;
+            }
+            .logo {
+                height: 35px;
+                margin-top: 10px;
+            }
+            body {
+                padding-top: 60px;
+                overflow-x: hidden;
+            }
+            .title_Txt {
+                position: absolute;
+                color: #fff;
+                left: 5%;
+                top: 0%;
+            }
+            .title_Txt h1 {
+                font-size: 18px;
+            }
+            .searth {
+                width: 80%;
+                margin-left: -40%;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+            }
+            .form-group>input {
+                height: 30px;
+            }
+            .leftSearth {
+                line-height: 30px;
+            }
+            .banner>img {
+                min-height: 190px;
+            }
+            .searthBtn {
+                background-size: 20px;
+            }
+            .car_model {
+                display: none;
+            }
+            .mission_row {
+                display: block;
+                background: transparent;
+            }
+            .mission_right {
+                color: #333;
+            }
+            .hotImg {
+                display: none;
+            }
+            .more_phone {
+                display: block;
+            }
+        }
     </style>
 </head>
 
@@ -483,6 +544,25 @@
                 <div>查看详情</div>
             </div>
         </div>
+
+        <div class="car_model_phone">
+            <div class="row" style="display: flex;justify-content: center;align-items: center;">
+                <div class="col-xs-3">
+                    <img src="img/carH.png" class="img-responsive">
+                </div>
+                <div class="col-xs-5">
+                    <h4 style="color: rgb(20,49,109);">机场接送 省心省力</h4>
+                    <p>提供上海，苏州，无锡各市<br> 往返机场、码头接送服务，更有包车服务
+                    </p>
+                </div>
+                <div class="col-xs-4">
+                    <a href="###" class="more" style="font-size: 14px;color: #333;border: 1px solid #333;padding: 5px 10px;text-align: center;">查看详情</a>
+                </div>
+
+            </div>
+        </div>
+
+
         <div id="top3">
             <h1>热 门 线 路</h1>
             <p>Populer tourist routes</p>
